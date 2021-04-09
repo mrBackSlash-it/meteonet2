@@ -26,7 +26,10 @@ import './MainScreen.css';
 
 function MainScreen() {
   return (
-    <h1>Test APP</h1>
+    <div>
+      <h1>Test APP</h1>
+      <h2>Push test</h2>
+    </div>
   );
 }
 
