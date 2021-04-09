@@ -1,22 +1,26 @@
 {
   "files": {
-    "main.css": "/WeatherLab360/static/css/main.6a7c17ee.chunk.css",
-    "main.js": "/WeatherLab360/static/js/main.648f258b.chunk.js",
-    "main.js.map": "/WeatherLab360/static/js/main.648f258b.chunk.js.map",
-    "runtime-main.js": "/WeatherLab360/static/js/runtime-main.6eb079c3.js",
-    "runtime-main.js.map": "/WeatherLab360/static/js/runtime-main.6eb079c3.js.map",
-    "static/js/2.baa7cd6c.chunk.js": "/WeatherLab360/static/js/2.baa7cd6c.chunk.js",
-    "static/js/2.baa7cd6c.chunk.js.map": "/WeatherLab360/static/js/2.baa7cd6c.chunk.js.map",
-    "static/js/3.f109f360.chunk.js": "/WeatherLab360/static/js/3.f109f360.chunk.js",
-    "static/js/3.f109f360.chunk.js.map": "/WeatherLab360/static/js/3.f109f360.chunk.js.map",
+    "main.css": "/WeatherLab360/static/css/main.4e048595.chunk.css",
+    "main.js": "/WeatherLab360/static/js/main.6343c60a.chunk.js",
+    "main.js.map": "/WeatherLab360/static/js/main.6343c60a.chunk.js.map",
+    "runtime-main.js": "/WeatherLab360/static/js/runtime-main.4c05ab44.js",
+    "runtime-main.js.map": "/WeatherLab360/static/js/runtime-main.4c05ab44.js.map",
+    "static/css/2.147a37b4.chunk.css": "/WeatherLab360/static/css/2.147a37b4.chunk.css",
+    "static/js/2.e8e976bd.chunk.js": "/WeatherLab360/static/js/2.e8e976bd.chunk.js",
+    "static/js/2.e8e976bd.chunk.js.map": "/WeatherLab360/static/js/2.e8e976bd.chunk.js.map",
+    "static/js/3.f3dbd255.chunk.js": "/WeatherLab360/static/js/3.f3dbd255.chunk.js",
+    "static/js/3.f3dbd255.chunk.js.map": "/WeatherLab360/static/js/3.f3dbd255.chunk.js.map",
     "index.html": "/WeatherLab360/index.html",
-    "static/css/main.6a7c17ee.chunk.css.map": "/WeatherLab360/static/css/main.6a7c17ee.chunk.css.map",
-    "static/js/2.baa7cd6c.chunk.js.LICENSE.txt": "/WeatherLab360/static/js/2.baa7cd6c.chunk.js.LICENSE.txt"
+    "static/css/2.147a37b4.chunk.css.map": "/WeatherLab360/static/css/2.147a37b4.chunk.css.map",
+    "static/css/main.4e048595.chunk.css.map": "/WeatherLab360/static/css/main.4e048595.chunk.css.map",
+    "static/js/2.e8e976bd.chunk.js.LICENSE.txt": "/WeatherLab360/static/js/2.e8e976bd.chunk.js.LICENSE.txt",
+    "static/media/m1.d7397f05.png": "/WeatherLab360/static/media/m1.d7397f05.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.6eb079c3.js",
-    "static/js/2.baa7cd6c.chunk.js",
-    "static/css/main.6a7c17ee.chunk.css",
-    "static/js/main.648f258b.chunk.js"
+    "static/js/runtime-main.4c05ab44.js",
+    "static/css/2.147a37b4.chunk.css",
+    "static/js/2.e8e976bd.chunk.js",
+    "static/css/main.4e048595.chunk.css",
+    "static/js/main.6343c60a.chunk.js"
   ]
 }
