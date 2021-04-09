@@ -26,7 +26,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import MainScreen from './Components/MainScreen/MainScreen';
+import MainScreen from './components/MainScreen/MainScreen';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 import 'leaflet/dist/leaflet.css';
