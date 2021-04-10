@@ -1,27 +1,27 @@
 {
   "files": {
     "main.css": "/WeatherLab360/static/css/main.d98844c5.chunk.css",
-    "main.js": "/WeatherLab360/static/js/main.0288a2ce.chunk.js",
-    "main.js.map": "/WeatherLab360/static/js/main.0288a2ce.chunk.js.map",
-    "runtime-main.js": "/WeatherLab360/static/js/runtime-main.1464ded9.js",
-    "runtime-main.js.map": "/WeatherLab360/static/js/runtime-main.1464ded9.js.map",
+    "main.js": "/WeatherLab360/static/js/main.837228a5.chunk.js",
+    "main.js.map": "/WeatherLab360/static/js/main.837228a5.chunk.js.map",
+    "runtime-main.js": "/WeatherLab360/static/js/runtime-main.539988a5.js",
+    "runtime-main.js.map": "/WeatherLab360/static/js/runtime-main.539988a5.js.map",
     "static/css/2.147a37b4.chunk.css": "/WeatherLab360/static/css/2.147a37b4.chunk.css",
-    "static/js/2.ed7d397f.chunk.js": "/WeatherLab360/static/js/2.ed7d397f.chunk.js",
-    "static/js/2.ed7d397f.chunk.js.map": "/WeatherLab360/static/js/2.ed7d397f.chunk.js.map",
-    "static/js/3.e92fa5b3.chunk.js": "/WeatherLab360/static/js/3.e92fa5b3.chunk.js",
-    "static/js/3.e92fa5b3.chunk.js.map": "/WeatherLab360/static/js/3.e92fa5b3.chunk.js.map",
+    "static/js/2.b4bd3d5c.chunk.js": "/WeatherLab360/static/js/2.b4bd3d5c.chunk.js",
+    "static/js/2.b4bd3d5c.chunk.js.map": "/WeatherLab360/static/js/2.b4bd3d5c.chunk.js.map",
+    "static/js/3.fcd9a538.chunk.js": "/WeatherLab360/static/js/3.fcd9a538.chunk.js",
+    "static/js/3.fcd9a538.chunk.js.map": "/WeatherLab360/static/js/3.fcd9a538.chunk.js.map",
     "index.html": "/WeatherLab360/index.html",
     "static/css/2.147a37b4.chunk.css.map": "/WeatherLab360/static/css/2.147a37b4.chunk.css.map",
     "static/css/main.d98844c5.chunk.css.map": "/WeatherLab360/static/css/main.d98844c5.chunk.css.map",
-    "static/js/2.ed7d397f.chunk.js.LICENSE.txt": "/WeatherLab360/static/js/2.ed7d397f.chunk.js.LICENSE.txt",
+    "static/js/2.b4bd3d5c.chunk.js.LICENSE.txt": "/WeatherLab360/static/js/2.b4bd3d5c.chunk.js.LICENSE.txt",
     "static/media/m1.d7397f05.png": "/WeatherLab360/static/media/m1.d7397f05.png",
     "static/media/stat-icon.d4a22b41.svg": "/WeatherLab360/static/media/stat-icon.d4a22b41.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1464ded9.js",
+    "static/js/runtime-main.539988a5.js",
     "static/css/2.147a37b4.chunk.css",
-    "static/js/2.ed7d397f.chunk.js",
+    "static/js/2.b4bd3d5c.chunk.js",
     "static/css/main.d98844c5.chunk.css",
-    "static/js/main.0288a2ce.chunk.js"
+    "static/js/main.837228a5.chunk.js"
   ]
 }
