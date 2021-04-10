@@ -22,29 +22,19 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-import React from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'; 
-import './MapActivity.css';
-import {StationMarker} from './StationMarker';
+import L from 'leaflet';
+import pisello from './stat-icon.svg';
 
-function MapActivity() {
-  return (
-    <div className="MapActivity">
-      <div className="leaflet-container">
-      <MapContainer center={[41.7892, 15.7416]} zoom={11}>
-        <TileLayer
-          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors | <a href="/info">WeatherLab360</a> visualizer'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        <Marker position={[41.7892, 15.7416]} icon={StationMarker}>
-          <Popup>
-            MARKER DI ESEMPIO
-          </Popup>
-        </Marker>
-      </MapContainer>
-      </div>
-    </div>
-  );
-}
+const StationMarker = new L.Icon({
+    iconUrl: pisello,
+    iconRetinaUrl: pisello,
+    iconAnchor: null,
+    popupAnchor: [0, -20],
+    shadowUrl: null,
+    shadowSize: null,
+    shadowAnchor: null,
+    iconSize: new L.Point(30, 30),
+    className: 'leaflet-div-icon'
+});
 
-export default MapActivity;
+export { StationMarker };
