@@ -29,6 +29,8 @@ import reportWebVitals from './reportWebVitals';
 import MainScreen from './Components/MainScreen/MainScreen';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
+import 'leaflet/dist/leaflet.css';
+import 'leaflet/dist/leaflet.js';
 
 ReactDOM.render(
   <React.StrictMode>

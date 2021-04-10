@@ -23,14 +23,27 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 import React from 'react';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import './MapActivity.css';
 
 
 function MapActivity() {
   return (
-      <div className="MapActivity">
-        <h1>Mappa</h1>
+    <div className="MapActivity">
+      <div className="leaflet-container">
+      <MapContainer center={[41.7892, 15.7416]} zoom={11}>
+        <TileLayer
+          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+        {/*<Marker position={[41.7892, 15.7416]}>
+          <Popup>
+            A pretty CSS3 popup. <br /> Easily customizable.
+          </Popup>
+        </Marker> */}
+      </MapContainer>
       </div>
+    </div>
   );
 }
 
