@@ -23,7 +23,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 import React from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'; 
+import { MapContainer, TileLayer, Marker, Popup, Tooltip } from 'react-leaflet'; 
 import './MapActivity.css';
 import {StationMarker} from './StationMarker';
 
@@ -40,6 +40,9 @@ function MapActivity() {
           <Popup>
             MARKER DI ESEMPIO
           </Popup>
+          <Tooltip direction="left" offset={[-20, 0]} opacity={1} permanent>
+            <b>10C°</b>
+          </Tooltip>
         </Marker>
       </MapContainer>
       </div>
