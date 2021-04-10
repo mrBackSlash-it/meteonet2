@@ -23,18 +23,15 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import MainScreen from './Components/MainScreen/MainScreen';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '@trendmicro/react-sidenav/dist/react-sidenav.css';
+import './WebcamsActivity.css';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <MainScreen />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-reportWebVitals();
+function WebcamsActivity() {
+  return (
+      <div className="WebcamsActivity">
+        <h1>Webcams</h1>
+      </div>
+  );
+}
+
+export default WebcamsActivity;

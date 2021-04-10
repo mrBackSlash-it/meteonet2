@@ -22,14 +22,90 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import MapActivity from '../MapActivity/MapActivity'
+import WebcamsActivity from '../WebcamsActivity/WebcamsActivity'
+import StationDetailsActivity from '../StationDetailsActivity/StationDetailsActivity';
+import ArchiveActivity from '../ArchiveActivity/ArchiveActivity'
+import InfoActivity from '../InfoActivity/InfoActivity'
+import { Map, CameraVideo, Server, ThermometerSun, InfoCircle } from 'react-bootstrap-icons'
+import SideNav, { NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
 import './MainScreen.css';
+
 
 function MainScreen() {
   return (
-    <div>
-      <h1>Test APP</h1>
-      <h2>Push test</h2>
-    </div>
+    <Router>
+      <Route render={({ location, history }) => (
+        <React.Fragment>
+          <SideNav
+            onSelect={(selected) => {
+              const to = '/' + selected;
+              if (location.pathname !== to) {
+                if (selected === "home") {
+                  history.push('/')
+                } else {
+                  history.push(to);
+                }
+              }
+            }}
+          >
+            <SideNav.Toggle />
+            <SideNav.Nav defaultSelected="home">
+              <NavItem eventKey="home">
+                <NavIcon>
+                  <Map width="1.75em" height="1.75em" />
+                </NavIcon>
+                <NavText>
+                  Mappa
+                </NavText>
+              </NavItem>
+              <NavItem eventKey="details">
+                <NavIcon>
+                  <ThermometerSun width="1.75em" height="1.75em" />
+                </NavIcon>
+                <NavText>
+                  Dettaglio Stazioni
+                </NavText>
+              </NavItem>
+              <NavItem eventKey="archive">
+                <NavIcon>
+                  <Server width="1.75em" height="1.75em" />
+                </NavIcon>
+                <NavText>
+                  Archivio Meteo
+                </NavText>
+              </NavItem>
+              <NavItem eventKey="webcams">
+                <NavIcon>
+                  <CameraVideo width="1.75em" height="1.75em" />
+                </NavIcon>
+                <NavText>
+                  Webcams
+                </NavText>
+              </NavItem>
+              <NavItem eventKey="info">
+                <NavIcon>
+                  <InfoCircle width="1.75em" height="1.75em" />
+                </NavIcon>
+                <NavText>
+                  Informazioni
+                </NavText>
+              </NavItem>
+            </SideNav.Nav>
+          </SideNav>
+          <main className="main">
+            <Route path="/" exact component={props => <MapActivity />} />
+            <Route path="/details" component={props => <StationDetailsActivity />} />
+            <Route path="/archive" component={props => <ArchiveActivity />} />
+            <Route path="/webcams" component={props => <WebcamsActivity />} />
+            <Route path="/info" component={props => <InfoActivity />} />
+          </main>
+        </React.Fragment>
+      )}
+      />
+    </Router>
   );
 }
 

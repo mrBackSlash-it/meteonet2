@@ -22,11 +22,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import MainScreen from './MainScreen';
 
 test('Render Main Screen', () => {
   render(<MainScreen />);
-  /* const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument(); */
+  //Placeholder test
 });

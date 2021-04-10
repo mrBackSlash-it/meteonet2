@@ -22,19 +22,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import MainScreen from './Components/MainScreen/MainScreen';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '@trendmicro/react-sidenav/dist/react-sidenav.css';
+import { render } from '@testing-library/react';
+import WebcamsActivity from './WebcamsActivity';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <MainScreen />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-reportWebVitals();
+test('Render WebcamsActivity', () => {
+  render(<WebcamsActivity />);
+  //Placeholder test
+});
