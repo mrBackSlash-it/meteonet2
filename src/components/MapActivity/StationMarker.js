@@ -33,7 +33,7 @@ const StationMarker = new L.Icon({
     shadowUrl: null,
     shadowSize: null,
     shadowAnchor: null,
-    iconSize: new L.Point(30, 30),
+    iconSize: new L.Point(40, 40),
     className: 'leaflet-div-icon'
 });
 

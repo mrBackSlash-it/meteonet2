@@ -55,7 +55,7 @@ function MapActivity() {
           />
           {
             Object.entries(networkData).map(([statSysName,station]) => (
-              <Marker position={[station.gps_long, station.gps_lat]} icon={StationMarker}>
+              <Marker key={statSysName} position={[station.gps_long, station.gps_lat]} icon={StationMarker}>
                 <Popup>
                   <b>{station.location}</b><br/>
                   Orario: {stationData.length !== 0 && new Date(stationData[statSysName].data.timestamp * 1000).toLocaleTimeString()} <br/>
