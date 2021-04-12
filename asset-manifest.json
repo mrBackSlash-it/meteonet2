@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/WeatherLab360/static/css/main.d98844c5.chunk.css",
-    "main.js": "/WeatherLab360/static/js/main.2723ea27.chunk.js",
-    "main.js.map": "/WeatherLab360/static/js/main.2723ea27.chunk.js.map",
+    "main.js": "/WeatherLab360/static/js/main.3de3dbc8.chunk.js",
+    "main.js.map": "/WeatherLab360/static/js/main.3de3dbc8.chunk.js.map",
     "runtime-main.js": "/WeatherLab360/static/js/runtime-main.1b3e4a26.js",
     "runtime-main.js.map": "/WeatherLab360/static/js/runtime-main.1b3e4a26.js.map",
     "static/css/2.147a37b4.chunk.css": "/WeatherLab360/static/css/2.147a37b4.chunk.css",
@@ -22,6 +22,6 @@
     "static/css/2.147a37b4.chunk.css",
     "static/js/2.5823db06.chunk.js",
     "static/css/main.d98844c5.chunk.css",
-    "static/js/main.2723ea27.chunk.js"
+    "static/js/main.3de3dbc8.chunk.js"
   ]
 }
