@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<script src="./HelloWorld.js"></script>
+<script src="./HelloWorld.ts"></script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>

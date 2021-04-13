@@ -5,5 +5,5 @@
   </div>
 </template>
 
-<script src="./App.js"></script>
+<script src="./App.ts"></script>
 <style src="./App.css"></style>
