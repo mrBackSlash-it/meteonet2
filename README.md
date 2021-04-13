@@ -4,10 +4,11 @@
 
 ### What does it do?
 WeatherLab360 displays data fetched from the [meteonet](https://github.com/meteogargano/meteonet) API.  
-This app is built with ReactJS and is licensed under the MIT License.
+**V2 API is currently under planning. Developement has not started yet.**  
+This app is built with VueJS and is licensed under the MIT License.
 
 ### Contributing
-All contributions are welcome. Please send an email to [ziofil@gmail.com](mailto:ziofil@gmail.com) or [vittorio@mrbackslash.it](mailto:vittorio@mrbackslash.it).  
+All contributions are welcome. Please send an email to[vittorio@mrbackslash.it](mailto:vittorio@mrbackslash.it) (Frontend and API related stuff) or [ziofil@gmail.com](mailto:ziofil@gmail.com) (Backend).  
 Pull requests are welcome but please describe well what you are changing and follow the code standards of the other files.
 
 ### Original Authors
