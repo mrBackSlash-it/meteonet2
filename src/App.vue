@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <h1>WeatherLab360</h1>
+    <HelloWorld msg="Prova!!"/>
   </div>
 </template>
 
