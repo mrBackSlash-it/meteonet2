@@ -47,7 +47,7 @@ function MapActivity() {
 
   return (
     <div className="MapActivity">
-      <div className="leaflet-container">
+      <div className="leaflet-container"  data-testid="leafletContainer">
         <MapContainer center={[appSettings.MAP_CENTER_LAT, appSettings.MAP_CENTER_LON]} zoom={11}>
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors | <a href="/info">WeatherLab360</a> visualizer'

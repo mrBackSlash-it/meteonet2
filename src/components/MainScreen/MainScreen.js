@@ -23,7 +23,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Redirect, Route } from 'react-router-dom';
 import MapActivity from '../MapActivity/MapActivity'
 import WebcamsActivity from '../WebcamsActivity/WebcamsActivity'
 import StationDetailsActivity from '../StationDetailsActivity/StationDetailsActivity';
@@ -52,7 +52,7 @@ function MainScreen() {
             }}
           >
             <SideNav.Toggle />
-            <SideNav.Nav defaultSelected="home">
+            <SideNav.Nav defaultSelected="home" data-testid="sidebar-item-map">
               <NavItem eventKey="home">
                 <NavIcon>
                   <Map width="1.75em" height="1.75em" />
@@ -61,7 +61,7 @@ function MainScreen() {
                   Mappa
                 </NavText>
               </NavItem>
-              <NavItem eventKey="details">
+              <NavItem eventKey="details" data-testid="sidebar-item-stationdetails">
                 <NavIcon>
                   <ThermometerSun width="1.75em" height="1.75em" />
                 </NavIcon>
@@ -69,7 +69,7 @@ function MainScreen() {
                   Dettaglio Stazioni
                 </NavText>
               </NavItem>
-              <NavItem eventKey="archive">
+              <NavItem eventKey="archive" data-testid="sidebar-item-archive">
                 <NavIcon>
                   <Server width="1.75em" height="1.75em" />
                 </NavIcon>
@@ -77,7 +77,7 @@ function MainScreen() {
                   Archivio Meteo
                 </NavText>
               </NavItem>
-              <NavItem eventKey="webcams">
+              <NavItem eventKey="webcams" data-testid="sidebar-item-webcams">
                 <NavIcon>
                   <CameraVideo width="1.75em" height="1.75em" />
                 </NavIcon>
@@ -85,7 +85,7 @@ function MainScreen() {
                   Webcams
                 </NavText>
               </NavItem>
-              <NavItem eventKey="info">
+              <NavItem eventKey="info" data-testid="sidebar-item-info">
                 <NavIcon>
                   <InfoCircle width="1.75em" height="1.75em" />
                 </NavIcon>
@@ -97,10 +97,11 @@ function MainScreen() {
           </SideNav>
           <main className="main">
             <Route path="/" exact component={props => <MapActivity />} />
-            <Route path="/details" component={props => <StationDetailsActivity />} />
-            <Route path="/archive" component={props => <ArchiveActivity />} />
-            <Route path="/webcams" component={props => <WebcamsActivity />} />
-            <Route path="/info" component={props => <InfoActivity />} />
+            <Route path="/details" exact component={props => <StationDetailsActivity />} />
+            <Route path="/archive" exact component={props => <ArchiveActivity />} />
+            <Route path="/webcams" exact component={props => <WebcamsActivity />} />
+            <Route path="/info" exact component={props => <InfoActivity />} />
+            <Redirect to="/" /* SUPPORT FOR GH PAGES! */ />
           </main>
         </React.Fragment>
       )}

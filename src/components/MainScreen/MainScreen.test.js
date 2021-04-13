@@ -22,10 +22,41 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-import { render } from '@testing-library/react';
+/* eslint-disable no-restricted-globals */
+import { render, screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
+import { createMemoryHistory } from 'history'
 import MainScreen from './MainScreen';
 
-test('Render Main Screen', () => {
+test('Full app rendering', () => {
   render(<MainScreen />);
-  //Placeholder test
+  expect(screen.getByTestId("leafletContainer")).toBeInTheDocument();
+  
+  const leftClick = { button: 0 };
+  
+  //placeholder checks
+  //TODO: Replace this with actual checks when components are implemented
+  userEvent.click(screen.getByTestId("sidebar-item-stationdetails"), leftClick);
+  expect(screen.getByText(/Dettaglio stazione/i)).toBeInTheDocument();
+
+  userEvent.click(screen.getByTestId("sidebar-item-archive"), leftClick);
+  expect(screen.getByText(/Consulta archivio meteo/i)).toBeInTheDocument();
+
+  userEvent.click(screen.getByTestId("sidebar-item-webcams"), leftClick);
+  expect(screen.getByText(/Webcams/i)).toBeInTheDocument();
+
+  userEvent.click(screen.getByTestId("sidebar-item-info"), leftClick);
+  expect(screen.getByText(/Dettaglio stazione/i)).toBeInTheDocument();
+
 });
+
+test('Check bad page', () => {
+  const history = createMemoryHistory();
+  history.push('/some/bad/route');
+  render(<MainScreen />);
+  //checks if bad route redirects to home
+  setTimeout(check2, 3000);
+  function check2(){
+    expect(history.location).toBe("/");
+  }
+})
