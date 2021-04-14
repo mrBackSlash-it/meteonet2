@@ -1,7 +1,16 @@
 <template>
   <div id="app">
-    <h1>WeatherLab360</h1>
-    <HelloWorld msg="Prova!!"/>
+    <div id="view" :class="[{'collapsed' : collapsed}]">
+      <router-view/>
+    </div>
+    <sidebar-menu
+      class="sidebar"
+      :menu="menu"
+      :collapsed="collapsed"
+      @item-click="onItemClick"
+      @collapse="onCollapse"
+      :width="width"
+    />
   </div>
 </template>
 
