@@ -1,10 +1,10 @@
 import { mount } from '@vue/test-utils'
 import App from '../../src/App'
-import HelloWorld from '../../src/components/HelloWorld/HelloWorld'
+import MapActivity from '../../src/components/MapActivity/MapActivity'
 
 describe('App', () => {
     it('has name', () => {
-        expect(App.name).toBe("App")
+        expect(App.name).toBe("WeatherLab360")
     })
 })
 
@@ -12,6 +12,6 @@ describe('Mounted App', () => {
     const wrapper = mount(App);
   
     test('is a Vue instance', () => {
-      expect(wrapper.findComponent(HelloWorld)).toBeTruthy()
+      expect(wrapper.findComponent(MapActivity)).toBeTruthy()
     })
 })
