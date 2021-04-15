@@ -1,4 +1,4 @@
-<!--
+/* 
 MIT License
 
 Copyright (c) 2021 Associazione MeteoGargano
@@ -21,23 +21,50 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
--->
+*/
 
-<template>
-  <div id="app">
-    <div id="view" :class="[{'collapsed' : collapsed}]">
-      <router-view/>
-    </div>
-    <sidebar-menu
-      class="sidebar"
-      :menu="menu"
-      :collapsed="collapsed"
-      @item-click="onItemClick"
-      @collapse="onCollapse"
-      :width="width"
-    />
-  </div>
-</template>
-
-<script src="./App.js"></script>
-<style src="./App.css"></style>
+export default {
+    name: "WeatherLab360",
+    data() {
+      return {
+        menu: [
+          {
+            href: "/",
+            title: "Map",
+            icon: "fa fa-map"
+          },
+          {
+            href: "/details",
+            title: "Station Details",
+            icon: "fa fa-cloud-sun"
+          },
+          {
+            href: "/archive",
+            title: "Archive",
+            icon: "fa fa-database"
+          },
+          {
+            href: "/webcams",
+            title: "Webcams",
+            icon: "fa fa-video"
+          },
+          {
+            href: "/credits",
+            title: "Credits",
+            icon: "fa fa-info-circle"
+          },
+        ],
+        collapsed: true,
+        width:"190px"
+      };
+    },
+    methods: {
+      onItemClick(e, i) {
+        console.log({"onItemClick": "Clicked", e, i})
+      },
+      onCollapse(c) {
+        console.log("onCollapse")
+        this.collapsed = c
+      }
+    },
+  };

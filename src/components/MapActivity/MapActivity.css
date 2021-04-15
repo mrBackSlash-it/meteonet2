@@ -1,4 +1,4 @@
-<!--
+/* 
 MIT License
 
 Copyright (c) 2021 Associazione MeteoGargano
@@ -21,23 +21,13 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
--->
+*/
 
-<template>
-  <div id="app">
-    <div id="view" :class="[{'collapsed' : collapsed}]">
-      <router-view/>
-    </div>
-    <sidebar-menu
-      class="sidebar"
-      :menu="menu"
-      :collapsed="collapsed"
-      @item-click="onItemClick"
-      @collapse="onCollapse"
-      :width="width"
-    />
-  </div>
-</template>
+.map-container{
+    width: 100%;
+    height: 100vh;
+}
 
-<script src="./App.js"></script>
-<style src="./App.css"></style>
+.map{
+    height: 100%;
+}
