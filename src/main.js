@@ -50,16 +50,6 @@ Vue.component('l-map', LMap);
 Vue.component('l-tile-layer', LTileLayer);
 Vue.component('l-marker', LMarker);
 
-Vue.prototype.$LOCALE = {
-  SIDEBAR: {
-      MAPACTIVITY_LINK: "Mappa",
-      STAT_DETAILS_LINK: "Dettaglio Stazioni",
-      ARCHIVE_LINK: "Archivio",
-      WEBCAMS_LINK: "Webcams",
-      CREDITS_LINK: "Informazioni"
-  }
-};
-
 Vue.config.productionTip = false;
 
 const router = new VueRouter({
